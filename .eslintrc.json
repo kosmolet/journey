@@ -41,7 +41,9 @@
       "react/jsx-one-expression-per-line": "off",
       "no-return-assign": "off",
       "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "no-unused-vars": ["warn", { "caughtErrors": "none" }],
+      "arrow-body-style": ["off", "as-needed"]
     }
   }
   

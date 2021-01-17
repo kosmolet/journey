@@ -1,0 +1,35 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: all 0.3s ease-out;
+  background: #ffffffee;
+  color: #242424;
+  transition: 250ms;
+}
+
+.btn__primary {
+  background-color: white;
+  color: #242424;
+}
+
+.btn__outline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.btn__medium {
+  padding: 8px 20px;
+  font-size: 15px;
+}
+
+.btn__large {
+  padding: 15px 26px;
+  font-size: 20px;
+}
