@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 import "./style.css";
 
 const Home = () => {
   return (
     <div>
       <Banner />
+      <Footer />
     </div>
   );
 };

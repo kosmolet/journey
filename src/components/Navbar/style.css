@@ -69,3 +69,86 @@
 .nav__mob__menu__icon {
   display: none;
 }
+
+@media screen and (max-width: 960px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav__menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav__link {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav__link:hover {
+    background-color: #fff;
+    color: #242424;
+
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 80%;
+  }
+
+  .navbar__logo {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+
+  .nav__mob__menu__icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+  }
+
+  .nav__link__mob {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.7rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav__link__mob:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
+  .btn__mob__view {
+    display: none;
+  }
+}

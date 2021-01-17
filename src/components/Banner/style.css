@@ -12,7 +12,7 @@
   justify-content: flex-start;
 }
 
-.banner > h1 {
+.banner h1 {
   color: #fff;
   font-size: 10vmin;
   padding-top: 100px;
@@ -20,18 +20,22 @@
   flex-shrink: 3;
 }
 
-.banner > p {
-  padding-top: 8px;
+.banner p {
+  padding-top: 1rem;
   color: #fff;
-  font-size: 32px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 5vmin;
+  text-transform: uppercase;
+  flex-shrink: 3;
+  align-self: flex-end;
+  padding-right: 50px;
 }
 
 .banner__btns {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
-.banner__btns .btn {
-  margin: 6px;
+@media screen and (max-width: 960px) {
+  .banner p {
+    font-size: 15px;
+  }
 }

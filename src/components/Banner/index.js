@@ -5,10 +5,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <h1>FIND ADVENTURE</h1>
-      <p>
-        What are you waiting for? Book a journey to any planet in our planetary
-        system!
-      </p>
+      <p>Book a journey to any planet in our solar system</p>
       <div className="banner__btns">
         <Button
           btnStyle="btn__outline"
@@ -17,13 +14,13 @@ const Banner = () => {
         >
           GET STARTED
         </Button>
-        <Button
+        {/* <Button
           btnStyle="btn__primary"
           btnSize="btn__large"
           path="/destinations"
         >
           WATCH TRAILER
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

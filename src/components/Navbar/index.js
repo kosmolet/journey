@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import Button from "../Button";
 import "./style.css";
 
@@ -54,7 +56,7 @@ const Navbar = () => {
               handleMobMenu(!showMobMenu);
             }}
           >
-            {showMobMenu ? "close" : "menu"}
+            {showMobMenu ? <CloseIcon /> : <MenuIcon />}
           </button>
           <ul className={showMobMenu ? "nav__menu active" : "nav__menu"}>
             <li className="nav__item">
