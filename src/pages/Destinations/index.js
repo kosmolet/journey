@@ -1,16 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import CardsList from "../../components/CardsList";
+import destinations from "../../config/destinations";
 import "./style.css";
 
 const Destinations = () => {
   return (
     <>
-      <div className="planet__frame">
-        <iframe
-          title="venus"
-          frameBorder="0"
-          src="https://eyes.nasa.gov/apps/orrery/#/venus"
-        />
+      <div className="destinations">
+        <CardsList cardItems={destinations} />
       </div>
     </>
   );

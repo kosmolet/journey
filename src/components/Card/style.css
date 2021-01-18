@@ -1,0 +1,14 @@
+.card {
+  padding-top: 120px;
+  flex: 1 1 350px;
+}
+.cards a {
+  text-decoration: none;
+  text-align: center;
+}
+.card__text {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+  font-family: "Monoton", cursive;
+}
