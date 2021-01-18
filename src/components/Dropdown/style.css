@@ -1,0 +1,25 @@
+.dropdown__menu__item {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 400px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 15px;
+  word-wrap: break-word;
+  text-align: left;
+  background: rgba(12, 12, 12, 0.8);
+  cursor: pointer;
+}
+
+.dropdown__menu__item:hover {
+  background: rgba(196, 83, 42, 0.6);
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .dropdown__menu__item {
+    display: none;
+  }
+}

@@ -4,11 +4,15 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import Button from "../Button";
 import "./style.css";
+import Dropdown from "../Dropdown";
+import destinations from "../../config/destinations";
+import services from "../../config/services";
 
 const Navbar = () => {
   const [showNavBackground, handleShowNavBackground] = useState(false);
   const [showMobMenu, handleMobMenu] = useState(false);
   const [showMobMenuBtn, handleMobMenuBtn] = useState(false);
+  const [dropdown, setDropdown] = useState("");
 
   const closeMobileMenu = () => handleMobMenu(false);
 
@@ -38,6 +42,18 @@ const Navbar = () => {
     };
   }, []);
 
+  const onMouseHover = (dd) => {
+    if (window.innerWidth < 960) {
+      setDropdown("");
+    } else {
+      setDropdown(dd);
+    }
+  };
+
+  const onMouseLeave = () => {
+    setDropdown("");
+  };
+
   return (
     <>
       <nav className={`navbar ${showNavBackground && "navbar__black"}`}>
@@ -59,7 +75,11 @@ const Navbar = () => {
             {showMobMenu ? <CloseIcon /> : <MenuIcon />}
           </button>
           <ul className={showMobMenu ? "nav__menu active" : "nav__menu"}>
-            <li className="nav__item">
+            <li
+              onMouseEnter={() => onMouseHover("services")}
+              onMouseLeave={onMouseLeave}
+              className="nav__item"
+            >
               <Link
                 to="/services"
                 className="nav__link"
@@ -67,8 +87,13 @@ const Navbar = () => {
               >
                 Services
               </Link>
+              {dropdown === "services" && <Dropdown menuItems={services} />}
             </li>
-            <li className="nav__item">
+            <li
+              onMouseEnter={() => onMouseHover("destinations")}
+              onMouseLeave={onMouseLeave}
+              className="nav__item"
+            >
               <Link
                 to="/destinations"
                 className="nav__link"
@@ -76,6 +101,9 @@ const Navbar = () => {
               >
                 Destinations
               </Link>
+              {dropdown === "destinations" && (
+                <Dropdown menuItems={destinations} />
+              )}
             </li>
             <li>
               <Link

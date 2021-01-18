@@ -37,18 +37,16 @@
 }
 
 .nav__menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
+  width: 500px;
 }
 
 .nav__item {
   height: 50px;
+  width: 200px;
 }
 
 .nav__link {
