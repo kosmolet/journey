@@ -1,35 +1,35 @@
 const destinations = [
   {
     title: "Mercury",
-    path: "/mercury",
+    path: "/planet/mercury",
   },
   {
     title: "Venus",
-    path: "/venus",
+    path: "/planet/venus",
   },
   {
     title: "Earth",
-    path: "/earth",
+    path: "/planet/earth",
   },
   {
     title: "Mars",
-    path: "/mars",
+    path: "/planet/mars",
   },
   {
     title: "Jupiter",
-    path: "/jupiter",
+    path: "/planet/jupiter",
   },
   {
     title: "Saturn",
-    path: "/saturn",
+    path: "/planet/saturn",
   },
   {
     title: "Uranus",
-    path: "/uranus",
+    path: "/planet/uranus",
   },
   {
     title: "Neptune",
-    path: "/neptune",
+    path: "/planet/neptune",
   },
 ];
 

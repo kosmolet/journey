@@ -27,6 +27,7 @@
 }
 
 .navbar__logo {
+  font-family: "Monoton", cursive;
   justify-self: start;
   color: #fff;
   cursor: pointer;

@@ -4,9 +4,15 @@ import "./style.css";
 
 const Destinations = () => {
   return (
-    <div>
-      <h1>Destinations</h1>
-    </div>
+    <>
+      <div className="planet__frame">
+        <iframe
+          title="venus"
+          frameBorder="0"
+          src="https://eyes.nasa.gov/apps/orrery/#/venus"
+        />
+      </div>
+    </>
   );
 };
 
