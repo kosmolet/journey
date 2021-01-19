@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const STYLES = ["btn__primary", "btn__outline", "nav__button__mob"];
+const STYLES = [
+  "btn__primary",
+  "btn__outline",
+  "nav__button__mob",
+  "btn__outline_cosm",
+];
 const SIZES = ["btn__medium", "btn__large"];
 const MOB_STYLES = ["btn__mob__view"];
 

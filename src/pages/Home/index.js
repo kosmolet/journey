@@ -1,14 +1,22 @@
 import Banner from "../../components/Banner";
-import CardsList from "../../components/CardsList";
 import Footer from "../../components/Footer";
-import destinations from "../../config/destinations";
+import HomeSection from "../../components/HomeSection";
+import {
+  viewRockets,
+  findDestination,
+  meetFriends,
+  viewZoo,
+} from "../../config/homeSectionInfo";
 import "./style.css";
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      {/* <CardsList cardItems={destinations} /> */}
+      <HomeSection {...viewRockets} />
+      <HomeSection {...findDestination} />
+      <HomeSection {...meetFriends} />
+      <HomeSection {...viewZoo} />
       <Footer />
     </div>
   );

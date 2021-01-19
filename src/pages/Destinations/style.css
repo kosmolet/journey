@@ -5,3 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.destinations__title {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 0 0 10px black, 0 0 20px #4297a0, 0 0 30px #e57f84;
+}

@@ -6,6 +6,7 @@ const Destinations = () => {
   return (
     <>
       <div className="destinations">
+        <h1 className="destinations__title">Find your destination</h1>
         <CardsList cardItems={destinations} />
       </div>
     </>
