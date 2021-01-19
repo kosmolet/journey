@@ -9,7 +9,7 @@ const services = [
   },
   {
     title: "Film documentary",
-    path: "/videoconference",
+    path: "/filmmovie",
   },
   {
     title: "Galaxy Internet",

@@ -13,7 +13,7 @@ const HomeSection = ({ direction, title, text, buttonLabel, path, image }) => {
       >
         <h2 className="info__title">{title}</h2>
         <p>{text}</p>
-        <Button path={path} btnStyle="btn__outline_cosm" btnSize="btn__large">
+        <Button path={path} btnStyle="btn__outline__cosm" btnSize="btn__large">
           {buttonLabel}
         </Button>
       </div>

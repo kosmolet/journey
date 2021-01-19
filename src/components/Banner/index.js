@@ -8,19 +8,12 @@ const Banner = () => {
       <p>Book a journey to any planet in our solar system</p>
       <div className="banner__btns">
         <Button
-          btnStyle="btn__outline"
+          btnStyle="btn__outline__cosm"
           btnSize="btn__large"
           path="/destinations"
         >
           GET STARTED
         </Button>
-        {/* <Button
-          btnStyle="btn__primary"
-          btnSize="btn__large"
-          path="/destinations"
-        >
-          WATCH TRAILER
-        </Button> */}
       </div>
     </div>
   );

@@ -34,14 +34,14 @@
   font-size: 20px;
 }
 
-.btn__outline_cosm {
+.btn__outline__cosm {
   background-color: transparent;
   color: coral;
   border: 1px solid white;
   font-family: "Monoton", cursive;
 }
 
-.btn__outline_cosm:hover {
+.btn__outline__cosm:hover {
   color: #4297a0;
   font-weight: bold;
 }

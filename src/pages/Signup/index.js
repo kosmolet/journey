@@ -2,8 +2,8 @@ import "./style.css";
 
 const Signup = () => {
   return (
-    <div>
-      <h1>Signup</h1>
+    <div className="signup">
+      <h1 className="gym__title">Signup comming soon....</h1>
     </div>
   );
 };

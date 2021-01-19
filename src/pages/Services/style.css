@@ -1,0 +1,15 @@
+.services {
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610896969/projectsGitHUB/journey/brett-ritchie-1vKTnwLMdqs-unsplash_ylizd6.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__title {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 0 0 10px black, 0 0 20px #4297a0, 0 0 30px #e57f84;
+}

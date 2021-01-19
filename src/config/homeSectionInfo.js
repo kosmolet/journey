@@ -3,7 +3,7 @@ const viewRockets = {
   title: "Explore our Rockets",
   text: "Fastest in whole universe",
   buttonLabel: "Rockets",
-  path: "/",
+  path: "/rockets",
   image:
     "https://res.cloudinary.com/dnkftif1n/image/upload/v1611048502/projectsGitHUB/journey/pexels-pixabay-65704_obkzul.jpg",
 };
@@ -23,7 +23,7 @@ const meetFriends = {
   title: "Meet Friends",
   text: "Expand your network outside the Earth",
   buttonLabel: "Friends",
-  path: "/",
+  path: "/friends",
   image:
     "https://res.cloudinary.com/dnkftif1n/image/upload/v1611056676/projectsGitHUB/journey/joshua-rondeau-hh6Y9yEuBL0-unsplash_tdhssg.jpg",
 };
@@ -33,7 +33,7 @@ const viewZoo = {
   title: "Explore Galaxy Wildlife",
   text: "See animals in the Wild Cosmos",
   buttonLabel: "Galaxy Zoo",
-  path: "/",
+  path: "/zoo",
   image:
     "https://res.cloudinary.com/dnkftif1n/image/upload/v1611052455/projectsGitHUB/journey/hulki-okan-tabak-GvFkalDmfLs-unsplash_z8yu3v.jpg",
 };

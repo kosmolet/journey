@@ -1,5 +1,5 @@
-.signup {
-  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611046574/projectsGitHUB/journey/pexels-pixabay-2156_ncnirv.jpg");
+.internet {
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611064485/projectsGitHUB/journey/pexels-junior-teixeira-2047905_lb9b22.jpg");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
   object-fit: contain;
 }
 
-.signup__title {
+.internet__title {
   font-family: "Press Start 2P", cursive;
   color: white;
   padding-top: 100px;
