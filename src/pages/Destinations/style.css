@@ -1,9 +1,10 @@
 .destinations {
-  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610896969/projectsGitHUB/journey/brett-ritchie-1vKTnwLMdqs-unsplash_ylizd6.jpg");
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611190014/projectsGitHUB/journey/other/v3_vhd8u5.jpg");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-shadow: 0 0 10px black, 0 0 20px grey, 0 0 30px plum;
 }
 
 .destinations__title {
@@ -11,5 +12,4 @@
   color: white;
   padding-top: 100px;
   text-align: center;
-  text-shadow: 0 0 10px black, 0 0 20px #4297a0, 0 0 30px #e57f84;
 }

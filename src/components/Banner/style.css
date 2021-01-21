@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610829519/projectsGitHUB/journey/banner_mdyvyx.jpg");
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610829519/projectsGitHUB/journey/other/banner_mdyvyx.jpg");
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,5 +37,9 @@
 @media screen and (max-width: 960px) {
   .banner p {
     font-size: 15px;
+    padding-left: 10px;
+  }
+  .banner h1 {
+    padding-left: 10px;
   }
 }

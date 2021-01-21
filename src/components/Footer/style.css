@@ -1,17 +1,14 @@
 .footer {
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611185952/projectsGitHUB/journey/other/footer_reqvly.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
-  background: #3c3b3f;
-  /* background: -webkit-linear-gradient(to right, #3c3b3f, #605c3c);
-  background: linear-gradient(to right, #3c3b3f, #605c3c); */
-  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610896969/projectsGitHUB/journey/brett-ritchie-1vKTnwLMdqs-unsplash_ylizd6.jpg");
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-weight: bold;
   text-shadow: 0 0 10px black, 0 0 20px grey, 0 0 30px plum;
 }
@@ -24,11 +21,6 @@
   text-align: center;
   margin-bottom: 1rem;
   color: #fff;
-}
-
-.footer__subscription > p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 
 .footer__subscription__heading {
@@ -51,12 +43,12 @@
   margin-bottom: 16px;
   background-color: rgba(46, 45, 45, 0.3);
   border: 1px solid #fff;
+  color: white;
 }
 
 .footer__email::placeholder {
   color: white;
 }
-
 .footer__links {
   width: 100%;
   max-width: 1000px;
@@ -70,13 +62,15 @@
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 220px;
   box-sizing: border-box;
 }
 
 .footer__links__group h2 {
   margin-bottom: 1.3rem;
   color: #fff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
 }
 
 .footer__links__group a {

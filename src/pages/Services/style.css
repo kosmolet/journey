@@ -1,10 +1,11 @@
 .services {
-  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1610896969/projectsGitHUB/journey/brett-ritchie-1vKTnwLMdqs-unsplash_ylizd6.jpg");
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611185952/projectsGitHUB/journey/other/footer_reqvly.jpg");
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  text-shadow: 0 0 10px black, 0 0 20px grey, 0 0 30px plum;
 }
 
 .services__title {
@@ -12,5 +13,11 @@
   color: white;
   padding-top: 100px;
   text-align: center;
-  text-shadow: 0 0 10px black, 0 0 20px #4297a0, 0 0 30px #e57f84;
+}
+
+@media screen and (max-width: 960px) {
+  .services {
+    height: 100%;
+    padding: 10px;
+  }
 }

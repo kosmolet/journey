@@ -13,8 +13,8 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <HomeSection {...viewRockets} />
       <HomeSection {...findDestination} />
+      <HomeSection {...viewRockets} />
       <HomeSection {...meetFriends} />
       <HomeSection {...viewZoo} />
       <Footer />

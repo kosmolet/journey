@@ -45,3 +45,9 @@
   color: #4297a0;
   font-weight: bold;
 }
+
+@media screen and (min-width: 1600px) {
+  .btn__large {
+    font-size: 30px;
+  }
+}

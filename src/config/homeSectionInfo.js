@@ -1,21 +1,21 @@
-const viewRockets = {
-  direction: "info__section",
-  title: "Explore our Rockets",
-  text: "Fastest in whole universe",
-  buttonLabel: "Rockets",
-  path: "/rockets",
-  image:
-    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611048502/projectsGitHUB/journey/pexels-pixabay-65704_obkzul.jpg",
-};
-
 const findDestination = {
-  direction: "info__section__reverse",
+  direction: "info__section",
   title: "Find Destination",
   text: "Ideal place for your trip",
   buttonLabel: "Destinations",
   path: "/destinations",
   image:
-    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611046575/projectsGitHUB/journey/h287229_rtn91b.jpg",
+    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611187388/projectsGitHUB/journey/other/direc_home_cmdfwv.jpg",
+};
+
+const viewRockets = {
+  direction: "info__section__reverse",
+  title: "Explore our Rockets",
+  text: "Fastest in whole universe",
+  buttonLabel: "Rockets",
+  path: "/rockets",
+  image:
+    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611185842/projectsGitHUB/journey/other/rocket_home_hpr6ey.jpg",
 };
 
 const meetFriends = {
@@ -25,7 +25,7 @@ const meetFriends = {
   buttonLabel: "Friends",
   path: "/friends",
   image:
-    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611056676/projectsGitHUB/journey/joshua-rondeau-hh6Y9yEuBL0-unsplash_tdhssg.jpg",
+    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611185842/projectsGitHUB/journey/other/friend_home_cavytx.jpg",
 };
 
 const viewZoo = {
@@ -35,7 +35,7 @@ const viewZoo = {
   buttonLabel: "Galaxy Zoo",
   path: "/zoo",
   image:
-    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611052455/projectsGitHUB/journey/hulki-okan-tabak-GvFkalDmfLs-unsplash_z8yu3v.jpg",
+    "https://res.cloudinary.com/dnkftif1n/image/upload/v1611185842/projectsGitHUB/journey/other/dino_home_dm7uil.jpg",
 };
 
 export { viewRockets, findDestination, meetFriends, viewZoo };
