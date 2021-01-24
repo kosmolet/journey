@@ -18,7 +18,7 @@ const Button = ({ children, path, onClick, btnStyle, btnSize, hideInMob }) => {
   return (
     <Link to={`${path}`}>
       <button
-        className={`btn ${buttonStyle} ${hideInMobView} ${buttonSize}`}
+        className={`button ${buttonStyle} ${hideInMobView} ${buttonSize}`}
         onClick={onClick}
         type="button"
       >

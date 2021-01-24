@@ -1,12 +1,16 @@
-.btn {
+.button {
   padding: 10px 20px;
   border-radius: 2px;
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+}
+.nav__button__mob:visited {
+  text-decoration: white;
 }
 
-.btn:hover {
+.button:hover {
   transition: all 0.3s ease-out;
   background: #ffffffee;
   color: #242424;

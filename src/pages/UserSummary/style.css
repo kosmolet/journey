@@ -1,0 +1,32 @@
+.user__summary {
+  background-image: url("https://res.cloudinary.com/dnkftif1n/image/upload/v1611188360/projectsGitHUB/journey/other/human_oop5cr.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.user__summary__title {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 0 0 10px black, 0 0 20px #4297a0, 0 0 30px #e57f84;
+}
+
+.user__data {
+  background-color: rgba(14, 13, 13, 0.6);
+  color: white;
+  height: 50vh;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}

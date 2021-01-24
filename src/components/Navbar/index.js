@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect, useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import Button from "../Button";
@@ -7,12 +7,23 @@ import "./style.css";
 import Dropdown from "../Dropdown";
 import destinations from "../../config/destinations";
 import services from "../../config/services";
+import { authContext } from "../../store/AuthContext";
 
 const Navbar = () => {
+  const history = useHistory();
+  const { setAuthData, auth } = useContext(authContext);
   const [showNavBackground, handleShowNavBackground] = useState(false);
   const [showMobMenu, handleMobMenu] = useState(false);
   const [showMobMenuBtn, handleMobMenuBtn] = useState(false);
   const [dropdown, setDropdown] = useState("");
+
+  const logoutHandler = () => {
+    setAuthData(null);
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("userData");
+    history.push("/login");
+    handleMobMenu(false);
+  };
 
   const closeMobileMenu = () => handleMobMenu(false);
 
@@ -105,20 +116,49 @@ const Navbar = () => {
                 <Dropdown menuItems={destinations} />
               )}
             </li>
-            <li>
-              <Link
-                to="/signup"
-                className="nav__link__mob"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
+            {auth.data ? (
+              <>
+                <li className="nav__link__mob">
+                  <Link to="/account" onClick={closeMobileMenu}>
+                    Account
+                  </Link>
+                </li>
+                <li className="nav__link__mob">
+                  <Link to="/" onClick={logoutHandler}>
+                    Log out
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <li>
+                <Link
+                  to="/login"
+                  className="nav__link__mob"
+                  onClick={closeMobileMenu}
+                >
+                  Sign In
+                </Link>
+              </li>
+            )}
           </ul>
-          {!showMobMenuBtn && (
-            <Button btnStyle="btn__outline" path="/signup" hideInMob>
-              SIGN UP
+          {!showMobMenuBtn && !auth.data ? (
+            <Button btnStyle="btn__outline" path="/login" hideInMob>
+              SIGN IN
             </Button>
+          ) : (
+            <div className="buttons__nav__group">
+              <Button btnStyle="btn__primary" path="/login" hideInMob>
+                Account
+              </Button>
+              <Button
+                btnStyle="btn__outline"
+                path="/"
+                onClick={logoutHandler}
+                hideInMob
+              >
+                LOG OUT
+              </Button>
+            </div>
           )}
         </div>
       </nav>

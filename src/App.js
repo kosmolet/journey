@@ -16,6 +16,14 @@ import FilmMovie from "./pages/FilmMovie";
 import Internet from "./pages/Internet";
 import Gym from "./pages/Gym";
 import Services from "./pages/Services";
+import AuthProvider from "./store/AuthContext";
+import NotFound from "./components/NotFound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ResetPassword from "./pages/ResetPassword";
+import ForgotPassword from "./pages/ForgotPassword";
+import PrivateRoute from "./components/PrivateRoute";
+import UserSummary from "./pages/UserSummary";
 
 function App() {
   useEffect(() => {
@@ -25,10 +33,20 @@ function App() {
   }, []);
 
   return (
-    <>
+    <AuthProvider>
       <Router>
         <Navbar />
         <Switch>
+          <PrivateRoute exact path="/account" component={UserSummary} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/forgotpassword" component={ForgotPassword} />
+          <Route
+            exact
+            path="/resetpassword/:resetToken"
+            component={ResetPassword}
+          />
+
           <Route path="/" exact component={Home} />
           <Route path="/destinations" component={Destinations} />
           <Route path="/signup" component={Signup} />
@@ -42,9 +60,11 @@ function App() {
           <Route path="/filmmovie" component={FilmMovie} />
           <Route path="/internet" component={Internet} />
           <Route path="/gym" component={Gym} />
+
+          <Route component={NotFound} />
         </Switch>
       </Router>
-    </>
+    </AuthProvider>
   );
 }
 

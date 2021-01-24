@@ -32,9 +32,9 @@
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   padding-left: 1vw;
-  text-shadow: 0 0 10px black, 0 0 20px coral, 0 0 30px coral;
 }
 
 .nav__menu {
@@ -67,6 +67,17 @@
 .nav__link__mob,
 .nav__mob__menu__icon {
   display: none;
+}
+
+.nav__link__mob a {
+  color: white;
+}
+
+.buttons__nav__group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
 }
 
 @media screen and (max-width: 960px) {
