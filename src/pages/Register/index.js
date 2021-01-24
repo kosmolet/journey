@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
+import baseURL from "../../axios";
 
 const Register = () => {
   const history = useHistory();
@@ -27,7 +27,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("/auth/register", {
+      await baseURL.post("/auth/register", {
         username,
         email,
         password,

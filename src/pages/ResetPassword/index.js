@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import axios from "axios";
+import baseURL from "../../axios";
 
 const ResetPassword = () => {
   const { resetToken } = useParams();
@@ -21,7 +21,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const { data } = await axios.put(`/auth/resetpassword/${resetToken}`, {
+      const { data } = await baseURL.put(`/auth/resetpassword/${resetToken}`, {
         password,
       });
 

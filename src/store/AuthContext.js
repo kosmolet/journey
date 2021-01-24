@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import axios from "axios";
+import baseURL from "../axios";
 
 export const authContext = createContext({});
 
@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
         };
 
         try {
-          const { data } = await axios.get("/user", config);
+          const { data } = await baseURL.get("/user", config);
           setAuth({
             data: {
               id: data.user._id,

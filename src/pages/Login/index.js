@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
-import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
+import baseURL from "../../axios";
 import { authContext } from "../../store/AuthContext";
 
 const Login = () => {
@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     setError("");
     try {
-      const { data } = await axios.post("/auth/login", { email, password });
+      const { data } = await baseURL.post("/auth/login", { email, password });
 
       localStorage.setItem("authToken", data.token);
 

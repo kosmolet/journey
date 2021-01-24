@@ -4,7 +4,6 @@ import AOS from "aos";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Destinations from "./pages/Destinations";
-import Signup from "./pages/Signup";
 import PlanetInfo from "./pages/PlanetInfo";
 import "aos/dist/aos.css";
 import Rockets from "./pages/Rockets";
@@ -49,7 +48,6 @@ function App() {
 
           <Route path="/" exact component={Home} />
           <Route path="/destinations" component={Destinations} />
-          <Route path="/signup" component={Signup} />
           <Route path="/services" component={Services} />
           <Route path="/planet/:name" component={PlanetInfo} />
           <Route path="/rockets" component={Rockets} />
