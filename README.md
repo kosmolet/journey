@@ -3,7 +3,13 @@
 ![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611442394/projectsGitHUB/journey/readme/2021-01-23_23-49-46_lzdlfb.png)
 ![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611442395/projectsGitHUB/journey/readme/2021-01-23_23-50-20_lrhmn5.png)
 ![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611442394/projectsGitHUB/journey/readme/2021-01-23_23-51-09_erpsdn.png)
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-13-18_wukb0w.png)
 
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-13-18_wukb0w.png)
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-13-47_ldsvup.png)
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-14-10_ovepkr.png)
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-14-49_diz1e3.png)
+![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611530192/projectsGitHUB/journey/readme/2021-01-25_0-11-42_nngnwc.png)
 
 # Getting Started with Create React App
 
