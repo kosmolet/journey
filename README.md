@@ -1,3 +1,4 @@
+[API repository ](https://github.com/kosmolet/journey-api)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dc80cd7d-4dd0-47c6-9bf7-c6aa18addfb7/deploy-status)](https://app.netlify.com/sites/cosmo-journey/deploys)
 ![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611442394/projectsGitHUB/journey/readme/2021-01-23_23-48-25_mgpzon.png)
 ![](https://res.cloudinary.com/dnkftif1n/image/upload/v1611442394/projectsGitHUB/journey/readme/2021-01-23_23-49-46_lzdlfb.png)
